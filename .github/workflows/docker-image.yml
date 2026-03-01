@@ -25,10 +25,10 @@ jobs:
 
     - name: Build Docker Image
       run:  |
-          docker build  klerith/docker-graphql:0.0.1 .
+          docker build -t  klerith/docker-graphql:0.0.2 .
     - name: Push Docker Image
       run:  |
-          docker push  klerith/docker-graphql:0.0.1 
+          docker push  klerith/docker-graphql:0.0.2 
     
     # - name: Build the Docker image
     #   run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
